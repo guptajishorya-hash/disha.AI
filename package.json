@@ -1,0 +1,10 @@
+{
+  "name": "disha-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Based Smart Logistics & Accessibility Intelligence Platform for NER",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm start"
+  }
+}
