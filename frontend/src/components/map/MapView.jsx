@@ -28,14 +28,18 @@ const MAP_STYLES = {
   standard: {
     version: 8,
     sources: {
-      'carto-voyager': {
+      'osm-tiles': {
         type: 'raster',
-        tiles: ['https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png'],
+        tiles: [
+          'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
+          'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
+          'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        ],
         tileSize: 256,
-        attribution: '© OpenStreetMap contributors, © CARTO'
+        attribution: '© OpenStreetMap contributors'
       }
     },
-    layers: [{ id: 'carto-layer', type: 'raster', source: 'carto-voyager', minzoom: 0, maxzoom: 19 }]
+    layers: [{ id: 'osm-layer', type: 'raster', source: 'osm-tiles', minzoom: 0, maxzoom: 19 }]
   },
   terrain: {
     version: 8,
