@@ -28,18 +28,14 @@ const MAP_STYLES = {
   standard: {
     version: 8,
     sources: {
-      'osm-tiles': {
+      'esri-street': {
         type: 'raster',
-        tiles: [
-          'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png'
-        ],
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}'],
         tileSize: 256,
-        attribution: '© OpenStreetMap contributors'
+        attribution: 'Tiles © Esri World Street Map'
       }
     },
-    layers: [{ id: 'osm-layer', type: 'raster', source: 'osm-tiles', minzoom: 0, maxzoom: 19 }]
+    layers: [{ id: 'street-layer', type: 'raster', source: 'esri-street', minzoom: 0, maxzoom: 19 }]
   },
   terrain: {
     version: 8,
