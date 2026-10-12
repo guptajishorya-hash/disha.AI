@@ -1,0 +1,38 @@
+# Dependencies (root and all subdirectories)
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Python cache & virtual environment
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Production build outputs
+dist/
+**/dist/
+build/
+*.egg-info/
+
+# Environment & Secret files
+.env
+.env.local
+.env.*
+!.env.example
+**/.env
+**/.env.local
+**/.env.*
+!**/.env.example
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+**/*.log
