@@ -1,8 +1,8 @@
-﻿# NER-SmartRoute AI — SIH 2026 (Problem ID: SIH26002)
+# NER-SmartRoute AI — SIH 2026 (Problem ID: SIH26002)
 
 **AI-Based Smart Logistics and Accessibility Intelligence Platform for the North Eastern Region (NER) — Government Command Center**
 
-Live Demo: https://sih-chi-one.vercel.app
+Live Demo: https://dishaai-ten.vercel.app
 
 ---
 
