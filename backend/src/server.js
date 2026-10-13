@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: true, limit: '2mb' }));
 app.use(requestLogger);
 
 // 4. Health Check Endpoint (Process Status)
-app.get('/health', (req, res) => {
+app.get(['/health', '/api/v1/health'], (req, res) => {
   return successResponse(res, {
     service: 'NER-SmartRoute AI Node.js Backend API',
     status: 'ONLINE',
@@ -46,7 +46,7 @@ app.get('/health', (req, res) => {
 });
 
 // 5. Readiness Check Endpoint (Dependencies Verification)
-app.get('/ready', async (req, res) => {
+app.get(['/ready', '/api/v1/ready'], async (req, res) => {
   let aiStatus = 'unreachable';
 
   try {
